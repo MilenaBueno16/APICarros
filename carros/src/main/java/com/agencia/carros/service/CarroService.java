@@ -40,7 +40,8 @@ public class CarroService {
         return rep.findByCor(cor).stream().map(CarroDTO::create).collect(Collectors.toList());
     }
 
-    public void delete(Long id) {
+
+    public void deleteById(Long id) {
         rep.deleteById(id);
     }
 }
